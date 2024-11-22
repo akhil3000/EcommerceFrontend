@@ -1,0 +1,28 @@
+.auth{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:70px;
+    margin:200px auto;
+   
+}
+
+.form-group{
+ padding:8px;
+
+}
+
+.auth-container{
+    border:1px solid gray;
+    
+}
+
+.container{
+
+    border:1px dotted gray;
+    margin:100px auto;
+    margin-left:200px;
+    margin-right:200px;
+    
+}

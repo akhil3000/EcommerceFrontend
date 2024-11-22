@@ -3,12 +3,15 @@ import axios from 'axios';
 import { UserErrors } from "../../errors";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
-
+import "./styles.css";
 export const AuthPage=()=>{
-   return <div className="auth">
+   return <div className="container">
+   <div className="auth">
     <Register/>
     <Login/>
-   </div>;
+   </div>
+   </div>
+  
 };
 
 const Register=()=>{ 

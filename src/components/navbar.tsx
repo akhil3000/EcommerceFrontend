@@ -8,7 +8,7 @@ export const Navbar=()=>{
         
         <div className="navbar-title">
          
-         <h1>PedroTech Shop</h1>   
+         <h1>Shoppers Stop</h1>   
 
         </div>
 
