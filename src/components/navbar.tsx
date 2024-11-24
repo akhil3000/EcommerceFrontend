@@ -20,7 +20,7 @@ export const Navbar=()=>{
          <FontAwesomeIcon icon={faShoppingCart}/>{""}
          </Link>
          <Link to="/purchased-items">Purchases</Link>
-        
+        <Link to="/about">AboutUs</Link>
          
         </div>
          

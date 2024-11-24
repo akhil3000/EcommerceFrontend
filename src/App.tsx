@@ -5,6 +5,7 @@ import { AuthPage } from './pages/auth';
 import { ShopPage } from './pages/shop';
 import { CheckoutPage } from './pages/checkout';
 import { PurchasedItemsPage } from './pages/purchaseditems';
+import { About } from './pages/about/About';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/auth" element={<AuthPage/>}/>
           <Route path="/checkout" element={<CheckoutPage/>}/>
           <Route path="/purchased-items" element={<PurchasedItemsPage/>}/>
-
+          <Route path="/about" element={<About/>}/>
        </Routes>
        
     </Router>
