@@ -6,6 +6,7 @@ import { ShopPage } from './pages/shop';
 import { CheckoutPage } from './pages/checkout';
 import { PurchasedItemsPage } from './pages/purchaseditems';
 import { About } from './pages/about/About';
+import { ShopContextProvider } from './context/shopcontext';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
    
   <div className="App">
     <Router>
+      <ShopContextProvider>
        <Navbar/>
        <Routes>
           <Route path="/" element={<ShopPage/>}/>
@@ -21,7 +23,7 @@ function App() {
           <Route path="/purchased-items" element={<PurchasedItemsPage/>}/>
           <Route path="/about" element={<About/>}/>
        </Routes>
-       
+       </ShopContextProvider>
     </Router>
 
 
