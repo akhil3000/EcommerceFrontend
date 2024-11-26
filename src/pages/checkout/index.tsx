@@ -2,6 +2,8 @@ import { useGetProducts } from "../../hooks/useGetProducts";
 import{IShopContext,ShopContext} from "../../context/shopcontext";
  import { useContext } from "react";
  import { IProduct } from "../../models/interfaces";
+ import {CartItem} from "./cartitem";
+ import "./styles.css"
 export const CheckoutPage=()=>{
     const{getCartItemCount}=useContext<IShopContext>(ShopContext);
     const{products}=useGetProducts();
@@ -15,8 +17,11 @@ export const CheckoutPage=()=>{
         {products.map((product:IProduct)=>{
 
 
-            if(getCartItemCount)
-            return <div></div>    
+            if(getCartItemCount(product._id)!==0)
+            {
+                return <CartItem product={product} />
+            }
+          
         }
 
         )}

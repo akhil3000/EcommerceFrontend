@@ -32,10 +32,15 @@ export const ShopContextProvider=(props)=>{
   };
 
  const removeFromCart=(itemId:string)=>{
+   if(!cartItems[itemId]) return;
+   if(cartItems[itemId]==0) return;
+   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
+
    
  }
  const updateCartItemCount=(newAmount:number,itemId:string)=>{
-
+  if(newAmount<0) return;
+  setCartItems((prev)=>({...prev,[itemId]:newAmount}))
 
  } 
 
