@@ -17,8 +17,8 @@ function App() {
       <ShopContextProvider>
        <Navbar/>
        <Routes>
-          <Route path="/" element={<ShopPage/>}/>
-          <Route path="/auth" element={<AuthPage/>}/>
+          <Route path="/shop" element={<ShopPage/>}/>
+          <Route path="/" element={<AuthPage/>}/>
           <Route path="/checkout" element={<CheckoutPage/>}/>
           <Route path="/purchased-items" element={<PurchasedItemsPage/>}/>
           <Route path="/about" element={<About/>}/>

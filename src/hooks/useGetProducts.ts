@@ -8,10 +8,12 @@ export const useGetProducts=()=>{
     const{headers}=useGetToken();
      const fetchProducts=async()=>{
         try{
-        const fetchProducts=await axios.get("http://localhost:3002/product/",{
+        const fetchProducts=await axios.get("http://localhost:3002/product/"
+           ,{
             headers
-
-        });
+              }
+            
+    );
         setProducts(fetchProducts.data.products);
     }catch(err)
     {

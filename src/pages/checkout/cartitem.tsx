@@ -26,7 +26,8 @@ export const CartItem=(props:Props)=>{
       />
       <button  onClick={()=>addToCart(_id)} >+</button>
       </div>
-    
+       
+        
       </div>
     )
 }
