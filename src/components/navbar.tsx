@@ -9,6 +9,7 @@ export const Navbar=()=>{
 
      const{availableMoney,isAuthenticated,setIsAuthenticated}=useContext<IShopContext>(ShopContext);  
       const[_,setCookies]=useCookies(["access_token"])
+      
      const logout=()=>{
         setIsAuthenticated(false);
 
@@ -22,8 +23,14 @@ export const Navbar=()=>{
         </div>
 
         <div className="navbar-links">
-         {isAuthenticated&& (  
+         {!isAuthenticated ? (  
          <>    
+        
+        </>
+         ):(
+
+
+            <>    
          <Link to="/shop">Shop</Link>
          <Link to="/" onClick={logout}>Logout</Link>
          <Link to="/checkout">

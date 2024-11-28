@@ -44,6 +44,7 @@ export const ShopContextProvider=(props)=>{
  const{products}=useGetProducts();
  const{headers}=useGetToken(); 
  const navigate=useNavigate();
+ 
 
     const fetchAvailableMoney=async()=>{
         try{ 
@@ -161,6 +162,9 @@ export const ShopContextProvider=(props)=>{
   }
 
  },[isAuthenticated])
+ 
+  
+ 
 
 
  const contextValue:IShopContext={
