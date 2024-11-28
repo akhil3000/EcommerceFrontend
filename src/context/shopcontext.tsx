@@ -125,6 +125,7 @@ export const ShopContextProvider=(props)=>{
 
    setCartItems({}); 
    fetchAvailableMoney();
+   fetchPurchasedItems();
 
     navigate("/shop");
   }catch(err){
